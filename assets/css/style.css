@@ -1,0 +1,17 @@
+h1#download {
+  color: #272042;
+  font-size: 46px;
+  font-family: Quicksand;
+  font-weight: 700;
+  line-height: 60px;
+  word-wrap: break-word;
+}
+
+h1#home {
+  color: #272042;
+  font-size: 46px;
+  font-family: Quicksand;
+  font-weight: 700;
+  line-height: 70px;
+  word-wrap: break-word;
+}
