@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icons Website -->
+    <link
+      rel="shortcut icon"
+      href="assets/img/burger.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Foodyar</title>
+  </head>
+  <body>
+    <!-- bagian navbar -->
+    <nav
+      class="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700"
+    >
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a
+          href="https://www.figma.com/design/NqHWg1UoplIXmuelaxQLC8/Foodyar-Website-(Community)?node-id=1-2&t=JwBYD7iDwLxILZ6m-1"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <img src="assets/img/burger.png" class="h-8" alt="Navbar Burger" />
+          <span
+            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white custom-purple"
+            >Foodyar</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="navbar-solid-bg"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-solid-bg"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
+          <ul
+            class="flex flex-col md:flex-row md:items-center font-medium mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="#home"
+                class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#beverages"
+                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Beverages</a
+              >
+            </li>
+            <li>
+              <a
+                href="#chef"
+                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Chef</a
+              >
+            </li>
+            <li>
+              <a
+                href="#ingredient"
+                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Ingredient</a
+              >
+            </li>
+            <li>
+              <a
+                href="#stories"
+                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Stories</a
+              >
+            </li>
+            <li>
+              <button
+                type="button"
+                class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 md:mb-0"
+              >
+                My Kitchen
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- bagian content 1 -->
+    <section
+      class="flex flex-col md:flex-row items-center justify-evenly p-8"
+      id="home"
+    >
+      <div
+        id="gambar-section-1"
+        class="max-w-md text-center md:text-left mb-6 md:mb-0"
+        data-aos="fade-right"
+        data-aos-offset="500"
+        data-aos-easing="ease-in-sine"
+      >
+        <h1
+          class="text-2xl font-bold mb-4"
+          style="
+            color: #272042;
+            font-size: 46px;
+            font-family: Quicksand;
+            font-weight: 700;
+            line-height: 70px;
+            word-wrap: break-word;
+          "
+        >
+          Eat What You Cook With Us, Together!
+        </h1>
+        <p class="text-gray-700">
+          When you eat something that cooked by yourself, the happiness is
+          priceless.
+        </p>
+        <button
+          type="button"
+          class="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 mt-5 dark:focus:ring-yellow-900 transition duration-700"
+        >
+          Decide a menu
+        </button>
+      </div>
+      <div
+        id="gambar-section-2"
+        data-aos="fade-left"
+        data-aos-offset="500"
+        data-aos-easing="ease-in-sine"
+      >
+        <img
+          src="assets/img/video-masak.png"
+          alt="Navbar Burger"
+          class="w-full max-w-xs rounded shadow-lg"
+        />
+      </div>
+    </section>
+
+    <!-- bagian content 2 -->
+    <section class="flex flex-col items-center justify-center p-8">
+      <!-- Title Section -->
+      <div
+        class="text-center mb-8"
+        id="beverages"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="500"
+      >
+        <h3 class="text-lg text-gray-400 font-semibold">Watch Now</h3>
+        <p class="text-2xl font-bold mb-2">Special To Try</p>
+        <ul
+          class="flex flex-col space-y-2 md:flex-row md:space-x-8 md:space-y-0 mt-3"
+        >
+          <li>
+            <a
+              href="#"
+              class="py-2 text-black hover:text-yellow-500 underline decoration-transparent hover:decoration-yellow-500"
+              aria-current="page"
+              >Healthy Food</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="py-2 text-black hover:text-yellow-500 underline decoration-transparent hover:decoration-yellow-500"
+              >Lunch</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="py-2 text-black hover:text-yellow-500 underline decoration-transparent hover:decoration-yellow-500"
+              >Vege Desert</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="py-2 text-black hover:text-yellow-500 underline decoration-transparent hover:decoration-yellow-500"
+              >Shake</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Product Section -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Item 1 -->
+        <div
+          class="relative flex flex-col items-center"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0"
+        >
+          <img
+            class="object-cover rounded-lg"
+            src="assets/img/salad-kiwi.png"
+            alt="Salad Kiwi Sugga"
+          />
+          <h3 class="mt-4 text-xl font-medium text-indigo-950">
+            Salad Kiwi Sugga
+          </h3>
+          <p class="text-gray-400 text-base">Amir Samantha</p>
+
+          <div class="flex items-center">
+            <svg
+              class="w-4 h-4 text-yellow-300 ms-1"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 22 20"
+            >
+              <path
+                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+              />
+            </svg>
+            <svg
+              class="w-4 h-4 text-yellow-300 ms-1"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 22 20"
+            >
+              <path
+                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+              />
+            </svg>
+            <svg
+              class="w-4 h-4 text-yellow-300 ms-1"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 22 20"
+            >
+              <path
+                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+              />
+            </svg>
+            <svg
+              class="w-4 h-4 text-yellow-300 ms-1"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 22 20"
+            >
+              <path
+                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+              />
+            </svg>
+            <svg
+              class="w-4 h-4 ms-1 text-gray-300 dark:text-gray-500"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 22 20"
+            >
+              <path
+                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div
+          class="relative flex flex-col items-center"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0"
+        >
+          <img
+            class="object-cover rounded-lg"
+            src="assets/img/avocado-muscle.png"
+            alt="Avocado Muscle"
+          />
+          <h3 class="mt-4 text-xl font-medium text-indigo-950">
+            Avocado Muscle
+          </h3>
+          <p class="text-gray-400 text-base">John Lennonk</p>
+
+          <div class="flex items-center">
+            <svg
+              class="w-4 h-4 text-yellow-300 ms-1"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 22 20"
+            >
+              <path
+                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+              />
+            </svg>
+            <svg
+              class="w-4 h-4 text-yellow-300 ms-1"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 22 20"
+            >
+              <path
+                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+              />
+            </svg>
+            <svg
+              class="w-4 h-4 text-yellow-300 ms-1"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 22 20"
+            >
+              <path
+                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+              />
+            </svg>
+            <svg
+              class="w-4 h-4 text-yellow-300 ms-1"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 22 20"
+            >
+              <path
+                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+              />
+            </svg>
+            <svg
+              class="w-4 h-4 text-yellow-300 ms-1"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 22 20"
+            >
+              <path
+                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div
+          class="relative flex flex-col items-center"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0"
+        >
+          <img
+            class="object-cover rounded-lg"
+            src="assets/img/bayam-red.png"
+            alt="Bayam Red Poppeye"
+          />
+          <h3 class="mt-4 text-xl font-medium text-indigo-950">
+            Bayam Red Poppeye
+          </h3>
+          <p class="text-gray-400 text-base">Toekang Sayoer</p>
+
+          <div class="flex items-center">
+            <svg
+              class="w-4 h-4 text-yellow-300 ms-1"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 22 20"
+            >
+              <path
+                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+              />
+            </svg>
+            <svg
+              class="w-4 h-4 text-yellow-300 ms-1"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 22 20"
+            >
+              <path
+                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+              />
+            </svg>
+            <svg
+              class="w-4 h-4 text-yellow-300 ms-1"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 22 20"
+            >
+              <path
+                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+              />
+            </svg>
+            <svg
+              class="w-4 h-4 text-yellow-300 ms-1"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 22 20"
+            >
+              <path
+                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+              />
+            </svg>
+            <svg
+              class="w-4 h-4 ms-1 text-gray-300 dark:text-gray-500"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 22 20"
+            >
+              <path
+                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div
+          class="relative flex flex-col items-center"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0"
+        >
+          <img
+            class="object-cover rounded-lg"
+            src="assets/img/naga-fruity.png"
+            alt="Naga Fruity Joss"
+          />
+          <h3 class="mt-4 text-xl font-medium text-indigo-950">
+            Naga Fruity Joss
+          </h3>
+          <p class="text-gray-400 text-base">Imelda Saranghae</p>
+
+          <div class="flex items-center">
+            <svg
+              class="w-4 h-4 text-yellow-300 ms-1"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 22 20"
+            >
+              <path
+                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+              />
+            </svg>
+            <svg
+              class="w-4 h-4 text-yellow-300 ms-1"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 22 20"
+            >
+              <path
+                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+              />
+            </svg>
+            <svg
+              class="w-4 h-4 text-yellow-300 ms-1"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 22 20"
+            >
+              <path
+                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+              />
+            </svg>
+            <svg
+              class="w-4 h-4 text-yellow-300 ms-1"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 22 20"
+            >
+              <path
+                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+              />
+            </svg>
+            <svg
+              class="w-4 h-4 text-yellow-300 ms-1"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 22 20"
+            >
+              <path
+                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="flex flex-col items-center justify-center p-8"
+      id="chef"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="500"
+    >
+      <!-- Text Section -->
+      <p
+        class="w-full max-w-xl text-center text-indigo-950 text-2xl md:text-4xl font-normal font-['Quicksand'] leading-relaxed mb-8"
+      >
+        Awalnya saya malu dengan mertua karena tidak bisa memasak, kini mereka
+        lebih suka makan malam di rumah demi menyantap masakan yang saya buat
+        sendiri
+      </p>
+
+      <!-- User Section -->
+      <div class="flex items-center space-x-4">
+        <div class="w-20 h-20">
+          <img
+            class="rounded-full object-cover w-full h-full"
+            src="assets/img/camella-sarah.png"
+            alt="Camella Sarrah"
+          />
+        </div>
+        <div class="flex flex-col">
+          <h3 class="text-indigo-950 text-xl font-medium font-['Quicksand']">
+            Camella Sarrah
+          </h3>
+          <p class="text-gray-400 text-base font-normal font-['Quicksand']">
+            Vege Master
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ingredient Section -->
+    <section
+      class="flex flex-col items-center justify-center p-8"
+      id="ingredient"
+    >
+      <div
+        class="Statistic flex flex-wrap justify-between w-full max-w-4xl h-auto gap-8 relative"
+      >
+        <div
+          class="w-32 h-20 flex flex-col items-center"
+          data-aos="zoom-out-up"
+          data-aos-duration="500"
+        >
+          <div
+            class="text-center text-indigo-950 text-3xl font-bold font-['Quicksand']"
+          >
+            180.000+
+          </div>
+          <div
+            class="text-center text-gray-400 text-xl font-normal font-['Quicksand']"
+          >
+            MENU FOOD
+          </div>
+        </div>
+
+        <div
+          class="Chefs w-32 h-20 flex flex-col items-center"
+          data-aos="zoom-out-up"
+          data-aos-duration="500"
+        >
+          <div
+            class="text-center text-indigo-950 text-3xl font-bold font-['Quicksand']"
+          >
+            20.000+
+          </div>
+          <div
+            class="text-center text-gray-400 text-xl font-normal font-['Quicksand']"
+          >
+            CHEFS
+          </div>
+        </div>
+
+        <div
+          class="w-36 h-20 flex flex-col items-center"
+          data-aos="zoom-out-up"
+          data-aos-duration="500"
+        >
+          <div
+            class="text-center text-indigo-950 text-3xl font-bold font-['Quicksand']"
+          >
+            400.000+
+          </div>
+          <div
+            class="text-center text-gray-400 text-xl font-normal font-['Quicksand']"
+          >
+            COURSE
+          </div>
+        </div>
+
+        <div
+          class="w-36 h-20 flex flex-col items-center"
+          data-aos="zoom-out-up"
+          data-aos-duration="500"
+        >
+          <div
+            class="text-center text-indigo-950 text-3xl font-bold font-['Quicksand']"
+          >
+            6.900.000
+          </div>
+          <div
+            class="text-center text-gray-400 text-xl font-normal font-['Quicksand']"
+          >
+            ALUMNI
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stories Section -->
+    <section class="flex flex-col items-center p-8 mb-12" id="stories">
+      <div
+        class="flex flex-col md:flex-row items-center justify-center w-full max-w-4xl relative"
+        data-aos="fade-right"
+        data-aos-offset="500"
+        data-aos-easing="ease-in-sine"
+      >
+        <div class="image w-full md:w-1/2 h-auto">
+          <img
+            class="object-cover w-full h-full"
+            src="assets/img/stories.png"
+            alt="Stories Image"
+          />
+        </div>
+        <div
+          class="download w-full md:w-1/2 text-center md:text-left p-4 md:p-0 mx-4 md:mx-8"
+          data-aos="fade-left"
+          data-aos-offset="500"
+          data-aos-easing="ease-in-sine"
+        >
+          <h1
+            style="
+              color: #272042;
+              font-size: 46px;
+              font-family: Quicksand;
+              font-weight: 700;
+              line-height: 60px;
+              word-wrap: break-word;
+            "
+          >
+            Download our app<br />and join the contest
+          </h1>
+          <p
+            class="text-gray-400 text-lg md:text-xl font-quicksand font-normal leading-loose mt-4 mb-8"
+          >
+            In order to improve our cooking skills,<br />we do need a food
+            photography
+          </p>
+          <div
+            class="flex flex-col md:flex-row justify-center md:justify-start gap-4"
+          >
+            <button
+              type="button"
+              class="text-white bg-[#050708] hover:bg-[#050708]/80 focus:ring-4 focus:outline-none focus:ring-[#050708]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:hover:bg-[#050708]/40 dark:focus:ring-gray-600 me-2 mb-2 w-auto"
+            >
+              <svg
+                class="w-5 h-5 me-2 -ms-1"
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fab"
+                data-icon="apple"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"
+                ></path>
+              </svg>
+              Check out with Apple Pay
+            </button>
+            <button
+              type="button"
+              class="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-800 dark:bg-white dark:border-gray-700 dark:text-gray-900 dark:hover:bg-gray-200 me-2 mb-2 w-auto"
+            >
+              <svg
+                aria-hidden="true"
+                class="w-10 h-3 me-2 -ms-1"
+                viewBox="0 0 660 203"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M233.003 199.762L266.362 4.002H319.72L286.336 199.762H233.003V199.762ZM479.113 8.222C468.544 4.256 451.978 0 431.292 0C378.566 0 341.429 26.551 341.111 64.604C340.814 92.733 367.626 108.426 387.865 117.789C408.636 127.387 415.617 133.505 415.517 142.072C415.384 155.195 398.931 161.187 383.593 161.187C362.238 161.187 350.892 158.22 333.368 150.914L326.49 147.803L319.003 191.625C331.466 197.092 354.511 201.824 378.441 202.07C434.531 202.07 470.943 175.822 471.357 135.185C471.556 112.915 457.341 95.97 426.556 81.997C407.906 72.941 396.484 66.898 396.605 57.728C396.605 49.591 406.273 40.89 427.165 40.89C444.611 40.619 457.253 44.424 467.101 48.39L471.882 50.649L479.113 8.222V8.222ZM616.423 3.99899H575.193C562.421 3.99899 552.861 7.485 547.253 20.233L468.008 199.633H524.039C524.039 199.633 533.198 175.512 535.27 170.215C541.393 170.215 595.825 170.299 603.606 170.299C605.202 177.153 610.098 199.633 610.098 199.633H659.61L616.423 3.993V3.99899ZM551.006 130.409C555.42 119.13 572.266 75.685 572.266 75.685C571.952 76.206 576.647 64.351 579.34 57.001L582.946 73.879C582.946 73.879 593.163 120.608 595.299 130.406H551.006V130.409V130.409ZM187.706 3.99899L135.467 137.499L129.902 110.37C120.176 79.096 89.8774 45.213 56.0044 28.25L103.771 199.45L160.226 199.387L244.23 3.99699L187.706 3.996"
+                  fill="#0E4595"
+                />
+                <path
+                  d="M86.723 3.99219H0.682003L0 8.06519C66.939 24.2692 111.23 63.4282 129.62 110.485L110.911 20.5252C107.682 8.12918 98.314 4.42918 86.725 3.99718"
+                  fill="#F2AE14"
+                />
+              </svg>
+              Pay with Visa
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-white dark:bg-gray-900">
+      <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:flex md:justify-between">
+          <!-- Logo Section -->
+          <div class="mb-6 md:mb-0">
+            <a href="https://flowbite.com/" class="flex items-center">
+              <img
+                src="assets/img/burger.png"
+                class="h-8 mr-3"
+                alt="Flowbite Logo"
+              />
+              <span
+                class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+              >
+                Foodyar
+              </span>
+            </a>
+          </div>
+
+          <!-- Links Section -->
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <!-- Special Course Section -->
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                Special Course
+              </h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">Wedding Foods</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">Healthy and Muscle</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">Office Foods Daily</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">Happy Kids</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Company Section -->
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                Company
+              </h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">APIs Developer</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">Career</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Contact Section -->
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                Be Our Friend
+              </h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  <p>3, Season Park, Jakarta</p>
+                </li>
+                <li class="mb-4">
+                  <a
+                    href="mailto:support@foodyar.co.id"
+                    class="hover:underline"
+                  >
+                    support@foodyar.co.id
+                  </a>
+                </li>
+                <li>
+                  <p>021 - 1111 - 2222</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Divider Line -->
+        <hr
+          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+        />
+
+        <!-- Footer Bottom Text -->
+        <div class="sm:flex sm:items-center sm:justify-center">
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+            All Rights Reserved Foodyar by Pixel Aziz 2024
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+      module.exports = {
+        theme: {
+          extend: {
+            colors: {
+              "custom-purple": "#272042",
+            },
+          },
+        },
+        plugins: [require("flowbite/plugin")],
+      };
+    </script>
+  </body>
+</html>
